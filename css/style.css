@@ -1,0 +1,176 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* Variables */
+:root {
+  --color-cyan: hsl(179, 62%, 43%);
+  --color-light-cyan: hsl(179, 47%, 52%);
+  --color-bright-yellow: hsl(71, 73%, 54%);
+  --color-light-gray: hsl(204, 43%, 93%);
+  --color-grayish-blue: hsl(218, 22%, 67%);
+
+  --font-family-normal: 'Karla', sans-serif;
+  --font-size-normal: 16px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+}
+
+/* CSS Reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--font-family-normal);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background-color: var(--color-light-gray);
+}
+
+/* Main Content */
+main {
+  width: 85%;
+  margin: 64px auto;
+  border-radius: 8px;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 'join' 'subscription' 'why';
+}
+
+/* General Elements */
+div {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1.2em;
+  font-weight: var(--font-weight-bold);
+}
+
+h2 {
+  font-size: 1.05em;
+  font-weight: var(--font-weight-bold);
+}
+
+p {
+  font-size: 0.9em;
+}
+
+/* "Join our community" section */
+.fm-join {
+  grid-area: join;
+
+  background-color: white;
+}
+
+.fm-join h1 {
+  color: var(--color-cyan);
+}
+
+.fm-join h2 {
+  color: var(--color-bright-yellow);
+  padding: 16px 0px;
+}
+
+.fm-join p {
+  padding-bottom: 4px;
+  color: var(--color-grayish-blue);
+  line-height: 1.75em;
+}
+
+/* "Monthly Subscription" section */
+.fm-subscription {
+  grid-area: subscription;
+
+  background-color: var(--color-cyan);
+}
+
+.fm-subscription h1 {
+  color: white;
+}
+
+.fm-subscription h2 {
+  padding: 16px 0px 8px;
+  color: var(--color-light-gray);
+
+  display: flex;
+  align-items: center;
+}
+
+.fm-subscription p {
+  padding-bottom: 16px;
+  color: var(--color-light-gray);
+}
+
+.fm-subscription h2 strong {
+  padding-right: 8px;
+  font-size: 2em;
+  color: white;
+}
+
+.fm-subscription a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: var(--color-bright-yellow);
+  border-radius: 8px;
+  box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* "Why Us" section */
+.fm-why {
+  grid-area: why;
+
+  background-color: var(--color-light-cyan);
+}
+
+.fm-why h1 {
+  color: white;
+}
+
+.fm-why ul {
+  padding-top: 16px;
+  color: var(--color-light-gray);
+  list-style: none;
+}
+
+.fm-why ul li {
+  padding: 2px 0px;
+  font-size: 0.9em;
+}
+
+@media (min-width: 800px) {
+  main {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    margin: 0px auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 'join join' 'subscription why';
+  }
+
+  .fm-subscription p {
+    padding-bottom: 44px;
+  }
+}
