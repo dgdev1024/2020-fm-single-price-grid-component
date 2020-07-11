@@ -1,5 +1,5 @@
 /* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
 
 /* Variables */
 :root {
@@ -9,7 +9,7 @@
   --color-light-gray: hsl(204, 43%, 93%);
   --color-grayish-blue: hsl(218, 22%, 67%);
 
-  --font-family-normal: 'Karla', sans-serif;
+  --font-family-normal: "Karla", sans-serif;
   --font-size-normal: 16px;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
@@ -40,7 +40,7 @@ main {
 
   display: grid;
   grid-template-rows: auto auto auto;
-  grid-template-areas: 'join' 'subscription' 'why';
+  grid-template-areas: "join" "subscription" "why";
 }
 
 /* General Elements */
@@ -152,6 +152,7 @@ p {
 @media (min-width: 800px) {
   main {
     width: 70%;
+    max-width: 640px;
   }
 }
 
@@ -167,7 +168,7 @@ p {
     margin: 0px auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    grid-template-areas: 'join join' 'subscription why';
+    grid-template-areas: "join join" "subscription why";
   }
 
   .fm-subscription p {
