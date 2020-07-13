@@ -48,12 +48,13 @@ div {
   padding: 20px;
 }
 
-h1 {
+h1,
+h2 {
   font-size: 1.2em;
   font-weight: var(--font-weight-bold);
 }
 
-h2 {
+h3 {
   font-size: 1.05em;
   font-weight: var(--font-weight-bold);
 }
@@ -91,11 +92,11 @@ p {
   background-color: var(--color-cyan);
 }
 
-.fm-subscription h1 {
+.fm-subscription h2 {
   color: white;
 }
 
-.fm-subscription h2 {
+.fm-subscription h3 {
   padding: 16px 0px 8px;
   color: var(--color-light-gray);
 
@@ -108,7 +109,7 @@ p {
   color: var(--color-light-gray);
 }
 
-.fm-subscription h2 strong {
+.fm-subscription h3 strong {
   padding-right: 8px;
   font-size: 2em;
   color: white;
@@ -134,7 +135,7 @@ p {
   background-color: var(--color-light-cyan);
 }
 
-.fm-why h1 {
+.fm-why h2 {
   color: white;
 }
 
